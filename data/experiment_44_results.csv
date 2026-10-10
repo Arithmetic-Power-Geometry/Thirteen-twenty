@@ -1,0 +1,3 @@
+audit,case_count,passed,detail
+exact_irrational_example,1,1,"t=1/4; 7/5<sqrt(2)<3/2"
+strict_rational_blocks,175,175,"block sizes 1..3; speeds 1..10; threshold 1/8; grid j/120"
