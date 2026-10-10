@@ -1,0 +1,5 @@
+GitHub Actions workflow: https://github.com/Arithmetic-Power-Geometry/Thirteen-twenty/actions/runs/38072927389
+Commit: 463345e62339fcb2333a2552087de4969864129c
+Python 3.11.17: run job 114273897926, Ran 29 tests in 15.591s, OK, benchmark step success, artifact 11677750933
+Python 3.12.15: run job 114273898132, Ran 29 tests in 23.491s, OK, benchmark step success, artifact 11677496435
+Test suite elapsed times are not per-query benchmark runtimes.
