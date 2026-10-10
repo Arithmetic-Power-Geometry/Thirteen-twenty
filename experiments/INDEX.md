@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–45 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–46 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -53,3 +53,5 @@ No confirmed claim of priority or breakthrough. Read [novelty audit](../docs/NOV
 | 44 | Rational-rank direct-sum theorem for real speeds; escapes finite-shift methods | [Experiment_44.md](Experiment_44.md) |
 
 | 45 | Exact short-integer-relation exclusion via Beck–Everett 2026; 56 independent crosschecks | [Experiment_45.md](Experiment_45.md) |
+
+| 46 | Exact all-dimensional safe-measure and tightness classification; 372 exact cases | [Experiment_46.md](Experiment_46.md) |
