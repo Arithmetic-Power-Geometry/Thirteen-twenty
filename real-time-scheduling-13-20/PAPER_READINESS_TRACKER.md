@@ -1,26 +1,27 @@
-# Paper readiness tracker — updated 10 October 2026
+# Paper readiness tracker — 10 October 2026
 
-## Implemented code/research stages
+## Implemented research/software stages
 
-- [x] CS-001–003 exact rational single-job reference oracle (code and tests).
-- [x] CS-004 classical admission baselines and tests.
-- [x] CS-005 conditional contiguous-slot bound.
-- [x] CS-006 explicit-output Omega(b) lower bound.
-- [x] CS-007 restricted equal-job capacity theorem and constructive solver.
-- [x] CS-008 independent YES/NO certificate verifier for the restricted equal-job problem and tampering tests.
+- [x] CS-001–003 exact rational reference solver and tests
+- [x] CS-004 classical admission baselines and tests
+- [x] CS-005 conditional contiguous-slot bound
+- [x] CS-006 elementary explicit-output lower bound
+- [x] CS-007 restricted equal-job capacity theorem and constructive solver
+- [x] CS-008 independent exact YES/NO certificate verifier
+- [x] CS-009 phase-shifted safe windows and adversarial jitter robustness theorem/solver/tests
+- [ ] CS-010 execution, benchmarking and independent reproducibility
 
-**No execution claim:** tests have been written/committed but their full execution and independent replication are not yet recorded. The restricted CS-007 theorem is classical; the originality gate is not met.
+**Important:** Source committed is not equivalent to independently executed or validated results. None of the classical restricted scheduling formulas by itself establishes a novel Q1-level CS result.
 
-## Five remaining substantive gates before a defensible paper draft
+## Four substantive gates remain before a defensible first full paper draft
 
-1. [ ] **Originality gate (critical):** prove a genuinely new additive-frequency-specific algorithmic/complexity theorem, or validate a compelling distinct systems contribution. CS-007/008 alone are insufficient.
-2. [ ] **CS-009 robustness:** phase and timing perturbations, counterexamples, exact uncertainty model and proofs.
-3. [ ] **CS-010 reproducibility:** execute all tests, independent cross-checks, adversarial tests, benchmarks, hashes, environments, and evidence tables.
-4. [ ] **Literature/priority audit:** closest prior work, theorem-by-theorem novelty matrix and verified bibliographic entries.
-5. [ ] **Write and audit full paper:** all claims, equations, figures, algorithms, tables, references and reproducibility aligned.
+1. [ ] **Originality gate:** genuinely new additive-frequency-specific theorem, complexity classification or compelling verified algorithmic improvement. Open-ended research task, not guaranteed.
+2. [ ] **CS-010 execution and evidence:** run complete tests, fix any failures, archive machine/software details, raw timing and scaling results, source hashes, cross-language comparisons.
+3. [ ] **Closest-prior-work literature audit:** verify sources, BibTeX and claim-by-claim novelty matrix.
+4. [ ] **Paper writing and line-by-line audit:** write only established claims with proofs, experimental provenance, limitations, algorithms, figures, tables and accurate citations.
 
-**Workflow count: five gates remain.** The originality gate is open-ended and cannot be promised in a fixed number of iterations. After the draft, independent expert review, journal-specific requirements and submission still remain.
+After drafting: specialist review, journal choice/formatting, revisions and submission. Q1 acceptance is never guaranteed.
 
-## Publication stop rule
+## Scope warning
 
-Do not claim a Q1 breakthrough merely because all CS-001–010 deliverables exist. Q1 status depends on journal/year and acceptance is external. If no original result is established, write a transparent working paper or redirect the research problem.
+The 13/20 measure guarantee is for aligned phases. CS-009 provides an exact solver for shifted phases but **does not** prove the same measure guarantee for independent phase offsets. A large safe measure does not guarantee contiguous task capacity or multi-job admission.
