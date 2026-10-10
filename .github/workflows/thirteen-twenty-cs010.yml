@@ -1,0 +1,39 @@
+name: Thirteen-twenty CS-010 reproducibility
+on:
+  push:
+    paths:
+      - 'real-time-scheduling-13-20/**'
+      - '.github/workflows/thirteen-twenty-cs010.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run exact rational test suite
+        working-directory: real-time-scheduling-13-20
+        run: |
+          python -V
+          python -m unittest discover -s tests -v 2>&1 | tee cs010-tests.log
+          test ${PIPESTATUS[0]} -eq 0
+      - name: Benchmark and independent certificate checks
+        working-directory: real-time-scheduling-13-20
+        run: python experiments/cs010_benchmark.py > cs010-benchmark.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cs010-python-${{ matrix.python-version }}
+          path: |
+            real-time-scheduling-13-20/cs010-tests.log
+            real-time-scheduling-13-20/cs010-benchmark.json
+          if-no-files-found: warn
