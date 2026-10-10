@@ -32,7 +32,7 @@ The remaining finitely many coprime pairs a<=b<B_q are exhaustively verified by 
 | 15 | 175 | 9250 | 0 | (1,13) |
 | 16 | 197 | 11698 | 0 | (1,14) |
 
-Total **41, -** cases. No floating-point decisions. Dataset: `data/experiment_31_q11_to_16.csv`. Reproduce: `python3 src/experiment_31_verify.py`.
+Total **40,998** exact coprime-pair cases. No floating-point decisions. Dataset: `data/experiment_31_q11_to_16.csv`. Reproduce: `python3 src/experiment_31_verify.py`.
 
 ## Scope and novelty
 Together with Experiment 30 (q=5..10), this establishes the sharp formula for **all integer q=5..16** through twelve separate finite computer-assisted certificates. It does not prove it for all q>=5, nor the 16-runner Lonely Runner Conjecture. A specialist literature audit remains necessary. Existing literature uses correlated safe-time sets and Fourier/Bohr-set methods; elementary interval discrepancy is unlikely to be independently novel.
