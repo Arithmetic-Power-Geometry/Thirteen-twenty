@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–37 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–38 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -31,6 +31,7 @@ Experiments 11–37 are individually recorded. Every completed experiment in thi
 | 35 | Sharp threshold q=20 (27,054 exact cases); high-dimensional barrier | [Experiment_35.md](Experiment_35.md) |
 | 36 | All-dimensional Fourier resonance identity; exact correlation counterexamples | [Experiment_36.md](Experiment_36.md) |
 | 37 | Exact finite time-grid equivalence for arbitrary runner dimension | [Experiment_37.md](Experiment_37.md) |
+| 38 | Explicit modular witnesses for all dimensions; exact residue density | [Experiment_38.md](Experiment_38.md) |
 
 ## Which question is solved?
 **Sharp additive-triple safe-time bound:** F(a,b)>=13/20 at threshold 1/16, with equality (1,14), conditional only on the finite verification reproducibility. See [proof](../docs/RESEARCH_REPORT.md), [C++](../src/exact_check.cpp) and [11,698-case certificate](../data/exact_results.csv).
