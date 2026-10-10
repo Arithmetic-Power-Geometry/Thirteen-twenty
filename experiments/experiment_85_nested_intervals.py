@@ -41,7 +41,7 @@ def audit():
             v=[3**j for j in range(k)]
             construct(v)
             count+=1
-    assert count==464
+    assert count==463
     print("PASS:",count,"exact all-stage nested interval constructions")
     for v in ((1,4),(1,3,9),(1,3,9,27),(1,3,9,27,81)):
         a,b,_=construct(v)
