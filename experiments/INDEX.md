@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–30 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–31 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -24,6 +24,7 @@ Experiments 11–30 are individually recorded. Every completed experiment in thi
 | 28 | Exact reciprocal-threshold formula (analytic proof) | [Experiment_28.md](Experiment_28.md) |
 | 29 | Bounded global-minimizer search (33,484 exact tests) | [Experiment_29.md](Experiment_29.md) |
 | 30 | Six fixed-threshold sharp bounds (computer-assisted proof) | [Experiment_30.md](Experiment_30.md) |
+| 31 | Six further sharp thresholds q=11..16 (40,998 exact cases) | [Experiment_31.md](Experiment_31.md) |
 
 ## Which question is solved?
 **Sharp additive-triple safe-time bound:** F(a,b)>=13/20 at threshold 1/16, with equality (1,14), conditional only on the finite verification reproducibility. See [proof](../docs/RESEARCH_REPORT.md), [C++](../src/exact_check.cpp) and [11,698-case certificate](../data/exact_results.csv).
