@@ -34,9 +34,9 @@ Data: `data/experiment_29_summary.csv`. Reproduction: `python3 src/experiment_29
 The finite tests above **do not prove** this. Experiment 26 gives the analytic bound
 `F_(1/q)(a,b) >= (1-3/q)^2 - 2/max(a,b)`
 for coprime a,b. For each fixed q, if `(1-3/q)^2>M_q`, this reduces the global conjecture to a *finite* but potentially very large exact computation. The positive gap is
-`(1-3/q)^2 - M_q = (q-3)(q+3)/(q²(q-1))`.
+`(1-3/q)^2 - M_q = 3(q-3)/(q²(q-1))`.
 The corresponding sufficient large-speed cutoff is
-`max(a,b) >= ceil(2 q²(q-1)/((q-3)(q+3)))`.
+`max(a,b) >= ceil(2 q²(q-1)/(3(q-3)))`.
 The finite search here was only through b<=100, so it does not close that gap for every q.
 
 ## Novelty and literature
