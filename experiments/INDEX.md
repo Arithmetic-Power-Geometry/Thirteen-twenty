@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–34 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–35 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -28,6 +28,7 @@ Experiments 11–34 are individually recorded. Every completed experiment in thi
 | 32 | Sharp threshold q=17 (14,726 exact cases) | [Experiment_32.md](Experiment_32.md) |
 | 33 | Sharp threshold q=18 (18,176 exact cases) | [Experiment_33.md](Experiment_33.md) |
 | 34 | Sharp threshold q=19 (22,204 exact cases) | [Experiment_34.md](Experiment_34.md) |
+| 35 | Sharp threshold q=20 (27,054 exact cases); high-dimensional barrier | [Experiment_35.md](Experiment_35.md) |
 
 ## Which question is solved?
 **Sharp additive-triple safe-time bound:** F(a,b)>=13/20 at threshold 1/16, with equality (1,14), conditional only on the finite verification reproducibility. See [proof](../docs/RESEARCH_REPORT.md), [C++](../src/exact_check.cpp) and [11,698-case certificate](../data/exact_results.csv).
