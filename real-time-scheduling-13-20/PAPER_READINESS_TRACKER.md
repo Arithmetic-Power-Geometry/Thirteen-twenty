@@ -1,28 +1,26 @@
 # Paper readiness tracker — updated 10 October 2026
 
-## Implemented stages (proof and execution audit distinct)
+## Implemented code/research stages
 
-- [x] CS-001–003: exact rational reference single-job solver and tests written.
-- [x] CS-004: classical admission baselines and differential tests written.
-- [x] CS-005: conditional contiguous-slot result and finite checks documented.
-- [x] CS-006: elementary Omega(b) explicit-output lower bound and verifier.
-- [x] CS-007: exact equal-duration, common-release/deadline multi-job capacity theorem; constructive solver and tests committed.
+- [x] CS-001–003 exact rational single-job reference oracle (code and tests).
+- [x] CS-004 classical admission baselines and tests.
+- [x] CS-005 conditional contiguous-slot bound.
+- [x] CS-006 explicit-output Omega(b) lower bound.
+- [x] CS-007 restricted equal-job capacity theorem and constructive solver.
+- [x] CS-008 independent YES/NO certificate verifier for the restricted equal-job problem and tampering tests.
 
-**Important:** CS-007's theorem is a standard interval-packing formula, not a verified novel contribution. It does not close the originality gate. GitHub commits do not imply the tests have run.
+**No execution claim:** tests have been written/committed but their full execution and independent replication are not yet recorded. The restricted CS-007 theorem is classical; the originality gate is not met.
 
-## How many steps remain before a defensible first paper draft?
+## Five remaining substantive gates before a defensible paper draft
 
-**Five planned workflow stages plus one unresolved, non-routine originality gate (six substantive gates total).**
+1. [ ] **Originality gate (critical):** prove a genuinely new additive-frequency-specific algorithmic/complexity theorem, or validate a compelling distinct systems contribution. CS-007/008 alone are insufficient.
+2. [ ] **CS-009 robustness:** phase and timing perturbations, counterexamples, exact uncertainty model and proofs.
+3. [ ] **CS-010 reproducibility:** execute all tests, independent cross-checks, adversarial tests, benchmarks, hashes, environments, and evidence tables.
+4. [ ] **Literature/priority audit:** closest prior work, theorem-by-theorem novelty matrix and verified bibliographic entries.
+5. [ ] **Write and audit full paper:** all claims, equations, figures, algorithms, tables, references and reproducibility aligned.
 
-1. [ ] **Originality gate:** find/prove a genuinely new additive-frequency-specific CS result, or demonstrate a validated system contribution with meaningful advantage. The completed CS-007 restricted theorem is insufficient.
-2. [ ] **CS-008:** independent exact schedule/certificate verifier and adversarial corruption tests.
-3. [ ] **CS-009:** phase/timing robustness analysis with explicit assumptions.
-4. [ ] **CS-010:** run full regression suite, reproduce independently, collect fair baseline benchmarks, hashes and hardware/software environment.
-5. [ ] **Literature and priority audit:** verify closest real-time scheduling, interval algorithms, formal methods and additive-runner results; create theorem-by-theorem novelty matrix and accurate bibliography.
-6. [ ] **Paper writing and line-by-line audit:** draft only supported claims, verified results, diagrams, algorithms and references.
+**Workflow count: five gates remain.** The originality gate is open-ended and cannot be promised in a fixed number of iterations. After the draft, independent expert review, journal-specific requirements and submission still remain.
 
-Afterward: journal choice/quartile verification, journal formatting, independent specialist review, revision and submission. Q1 acceptance cannot be guaranteed.
+## Publication stop rule
 
-## Stop rule
-
-If the originality gate remains open, a technically complete paper draft may still be written as a working paper, but it must not be presented as Q1-ready original CS research. Research discovery is not a predictable six-step countdown.
+Do not claim a Q1 breakthrough merely because all CS-001–010 deliverables exist. Q1 status depends on journal/year and acceptance is external. If no original result is established, write a transparent working paper or redirect the research problem.
