@@ -1,25 +1,17 @@
-# Paper readiness tracker — 10 October 2026
+# Paper readiness — 10 October 2026
 
-## Implementation progress
+## Work completed in this pass
 
-- [x] CS-001–003 exact rational single-job solver
-- [x] CS-004 classical baseline algorithms
-- [x] CS-005 conditional contiguous-slot theorem
-- [x] CS-006 explicit-output lower bound
-- [x] CS-007 restricted equal-job capacity theorem
-- [x] CS-008 independent certificate verifier
-- [x] CS-009 phase-shift and jitter robustness solver
-- [x] CS-010 CI workflow, test harness and benchmark script **committed**
-- [ ] CS-010 inspect completed CI runs, fix failures, archive verified raw data and repeat benchmarks
+- [x] Added CS-011 fixed-frequency (1,1,2) weak NP-completeness proof via PARTITION and an exhaustive small-instance test.
+- [x] Added initial five-source publisher/arXiv-grounded closest-prior-work comparison and BibTeX.
+- [x] Wrote a full first-pass paper at `paper/PAPER_DRAFT.md`.
+- [x] Saved integrity and publication audit at `paper/FINAL_AUDIT.md`.
+- [x] CS-001–010 code and workflow infrastructure previously committed.
 
-## Three high-level gates remain before a defensible full paper draft
+## Remaining mandatory publication blockers — 3
 
-1. [ ] **Execution and reproducibility audit:** confirm GitHub Actions results for Python 3.11/3.12, repair test/code failures, inspect artifacts, run repeated fair experiments, independently verify claims.
-2. [ ] **Novelty and verified bibliography:** demonstrate a genuinely new additive-frequency-specific algorithmic/complexity or rigorously evidenced systems result; verify closest literature and full bibliography. This gate is open-ended and not assured by the preceding implementation.
-3. [ ] **Full paper writing and pre-submission audit:** claim–proof–artifact alignment, complete citations, figures, tables, algorithms, reproducible provenance, no internal instructions.
+1. [ ] **Verified execution:** inspect successful CI logs for all tests, repair failures, independently replicate results, archive raw benchmark data and source hashes. Network-restricted local environment could not clone the repository; no test pass is asserted.
+2. [ ] **Originality clearance:** demonstrate a nontrivial original arithmetic-specific result or substantially stronger validated systems contribution; expand the five-source initial bibliography to comprehensive verified prior work. The PARTITION proof is mathematically sound as written but uses a standard two-bin reduction and cannot by itself establish journal novelty.
+3. [ ] **Submission-ready manuscript audit:** after the preceding gates, add verified results, complete citations, journal format and independently audited theorem proofs. Current manuscript is a complete **working draft**, not submission-ready.
 
-This is a **three-gate workflow**, not a guarantee of a Q1 paper in three routine steps. A draft can be started earlier as a working paper, but Q1-level novelty has not been demonstrated.
-
-## Next action
-
-Inspect Actions runs and artifacts at https://github.com/Arithmetic-Power-Geometry/Thirteen-twenty/actions. Do not report CS-010 experiments as passed until actual logs and JSON are reviewed. Do not treat the 13/20 safe-time measure as a 65% throughput guarantee.
+**Paper writing has begun and the first full draft exists.** There are **zero steps remaining to start writing**; **three unresolved blockers to claim submission readiness**. Completion time is not predictable because originality is open-ended. No Q1 acceptance claim.
