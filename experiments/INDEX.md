@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–27 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -20,6 +20,7 @@ Every completed experiment in this archive has its own standalone Markdown file.
 | 24 | General finite evidence | [Experiment_24.md](Experiment_24.md) |
 | 25 | General sharp 13/20 bound | [Experiment_25.md](Experiment_25.md) |
 | 26 | Variable-threshold torus discrepancy | [Experiment_26.md](Experiment_26.md) |
+| 27 | Reciprocal-threshold exact formula candidate | [Experiment_27.md](Experiment_27.md) |
 
 ## Which question is solved?
 **Sharp additive-triple safe-time bound:** F(a,b)>=13/20 at threshold 1/16, with equality (1,14), conditional only on the finite verification reproducibility. See [proof](../docs/RESEARCH_REPORT.md), [C++](../src/exact_check.cpp) and [11,698-case certificate](../data/exact_results.csv).
