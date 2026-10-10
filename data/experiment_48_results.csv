@@ -1,0 +1,5 @@
+k,total,strict,tight,below_threshold,min_strict_gap,min_gap_speeds,min_gap_witness
+2,36,32,4,0,1/15,1:4,3/5
+3,84,81,3,0,1/28,1:2:6,5/7
+4,126,123,3,0,1/45,1:2:3:8,7/9
+5,126,124,2,0,1/66,1:2:3:5:8,8/11
