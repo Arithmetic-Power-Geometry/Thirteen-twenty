@@ -46,3 +46,7 @@ Expected stderr: `tested=11698 violations=0 equality=1 minimum=1,14=2184/3360`.
 - Beck & Everett, *Lonely Runner Relations*, arXiv:2609.06259 (2026).
 
 For detailed scope and caveats see the reports in `docs/`.
+## Latest research update — Experiment 31 (2026-10-10)
+The sharp reciprocal-threshold safe-time minimum has been established with analytic finite reduction and exact certificates for each integer **q=5,...,16**. The exact special-family formula is proved for all q>=5; global minimization for q>=17 remains open. See [Experiment 31](experiments/Experiment_31.md), [verification source](src/experiment_31_verify.py), and [results](data/experiment_31_q11_to_16.csv).
+
+**Deep novelty audit:** [10 October 2026](docs/DEEP_NOVELTY_AUDIT_2026_10_10.md). **Reusable BibTeX:** [references/lonely_runner.bib](references/lonely_runner.bib), 12 entries. No proof of the general sixteen-runner conjecture or research priority is claimed.
