@@ -1,0 +1,4 @@
+speed_set,k,exact_optimum,witness,classification
+1:3:4:7,4,1/5,4/5,tight
+1:3:4:5:9,5,1/6,5/6,tight
+1:2:4:8,4,1/3,2/3,strict
