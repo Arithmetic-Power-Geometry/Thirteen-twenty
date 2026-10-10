@@ -1,23 +1,29 @@
-# CS-004 — Classical exact admission baselines
+# CS-004 — Correct classical exact admission baselines
 
-Status: implementation and deterministic differential tests provided. Execution environment and performance evidence must be recorded separately.
+**Status:** code and tests committed; runtime benchmarks and independent execution pending.
 
-## Baselines
+## Algorithms
 
-1. Linear scan of maximal safe intervals: O(k) comparisons per query.
-2. Sorted right endpoints + binary search: O(log k) comparisons per query after O(k) storage/preprocessing.
-3. AdmissionIndex: same classical binary-search method, with endpoints cached across queries.
+1. `linear_query`: O(k) worst-case scan of k maximal safe intervals.
+2. `binary_query`: binary-search first interval whose right endpoint >= r+p, then scan later windows; O(log k + k) worst-case.
+3. `AdmissionIndex`: segment tree storing each safe-window length, binary searches by right and left endpoints, then leftmost length-eligible range query; O(k) additional storage/build and O(log k) worst-case per query. Classical data structure, **not novel**.
 
-The safe-window construction itself uses O((a+b)log(a+b)) rational comparisons and O(a+b) space, where k <= O(a+b). These are arithmetic-operation bounds and are pseudopolynomial for binary-encoded frequencies. Do not claim any of these methods are original.
+### Why right-endpoint binary search alone is insufficient
 
-## Proof of binary query
+The first window with U>=r+p may be shorter than p, while a later window fits. Returning NO after testing only the first window is incorrect. The implementation explicitly checks later windows. This is a crucial adversarial test and a reason to insist on differential testing.
 
-For release r and processing p>0, any feasible safe interval [L,U] must satisfy U >= r+p. Right endpoints of disjoint ordered intervals are strictly increasing. Let [L*,U*] be the first with U* >= r+p. If this interval has L* > d-p, then every later interval has L >= L* > d-p and cannot fit the deadline. Otherwise s=max(r,L*) is feasible provided s+p <= min(U*,d). Thus checking the first candidate is sufficient. Exact endpoints mean no floating-point tolerance.
+## Correctness argument for AdmissionIndex
 
-## Testing protocol
+Let i be the first window with U_i>=r+p. Earlier windows cannot contain [s,s+p] for any s>=r. If i fits within deadline, return max(r,L_i). Otherwise, any feasible later window j>i must have L_j<=d-p and length U_j-L_j>=p. Conversely, every later window satisfying both inequalities admits a task starting at L_j (which is >=r because intervals are disjoint and j>i). The binary search computes the allowed prefix of later windows and the segment tree returns its earliest member of length >=p. This is sound and complete.
 
-Run `python3 -m unittest discover -s tests -v`. Differential tests compare all three baselines against the reference exact oracle on small frequency pairs and rational task grids; also test maximal window lengths and invalid inputs.
+## Complexity
 
-## Next milestone
+Window extraction O((a+b)log(a+b)) rational comparisons; k=O(a+b). Index construction O(k), indexed query O(log k) exact comparisons, plus bit-arithmetic costs. Since frequencies are binary-encoded, preprocessing is pseudopolynomial. These are existing techniques, not a Q1-level breakthrough.
 
-Measure preprocessing separately from repeated-query latency, memory and proof-check time. Use increasing a+b, normalized coprime pairs, adversarial tight deadlines and job-duration distributions. Record raw results and hashes. Then look for **special arithmetic structure** yielding more than standard binary search or a general scheduling result.
+## Reproduce
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+Tested logically by differential-test design, but this report does not claim tests have executed. Follow-up: record execution outputs and benchmark latency, memory, preprocessing, certificate sizes and scaling.
