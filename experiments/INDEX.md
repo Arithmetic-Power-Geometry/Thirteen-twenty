@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–43 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–44 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -49,3 +49,5 @@ No confirmed claim of priority or breakthrough. Read [novelty audit](../docs/NOV
 | 42 | Exact all-dimensional inclusion-exclusion fiber test; higher-order overlap witness | [Experiment_42.md](Experiment_42.md) |
 
 | 43 | Exact all-dimensional boundary-only decision theorem; 2,497 exact tests | [Experiment_43.md](Experiment_43.md) |
+
+| 44 | Rational-rank direct-sum theorem for real speeds; escapes finite-shift methods | [Experiment_44.md](Experiment_44.md) |
