@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–41 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–42 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -45,3 +45,5 @@ No confirmed claim of priority or breakthrough. Read [novelty audit](../docs/NOV
 | 40 | All-dimensional modular-fiber extension theorem and exact 15-speed example | [Experiment_40.md](Experiment_40.md) |
 
 | 41 | All-dimensional overlap-corrected fiber certificate; union-bound failure overcome | [Experiment_41.md](Experiment_41.md) |
+
+| 42 | Exact all-dimensional inclusion-exclusion fiber test; higher-order overlap witness | [Experiment_42.md](Experiment_42.md) |
