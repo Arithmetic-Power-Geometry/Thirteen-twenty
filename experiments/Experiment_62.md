@@ -23,7 +23,7 @@ This theorem only guarantees a positive-measure witness under its strict inequal
 Experiment 61 proves existence from one long safe component. Experiment 62 supplies a quantitative LOWER BOUND ON THE MEASURE of all k-speed safe times, using the entire old safe set and its component count. The sufficient inequality V>2*c/(q*s) is generally no stronger than the longest-component criterion, because the longest component has length >=s/c. Thus this is a different quantitative conclusion, NOT a stronger universal existence theorem.
 
 ## Checkable example
-Take k=3, q=4, A={1,3}, V=4. The safe set S has two components [1/4,5/12] and [7/12,3/4], each length 1/6, so s=1/3 and c=2. The bound gives (1/2)*(1/3) - (1/4)*2/4 = 1/24 > 0. The actual three-speed safe set has positive measure; t=5/12 is an explicit witness.
+Take k=3, q=4, A={1,3}, V=4. The old safe set S is the single closed interval [5/12,7/12], of length s=1/6 and c=1. The bound gives (1/2)*(1/6) - (1/4)*1/4 = 1/48 > 0. The actual three-speed safe set has positive measure; t=5/12 is an explicit witness.
 
 ## Literature and priority
 - Terence Tao (2018), Some remarks on the lonely runner conjecture, Contributions to Discrete Mathematics 13(2), DOI 10.55016/ojs/cdm.v13i2.62728. Publisher verified. Existing bibliography entry should be reused.
