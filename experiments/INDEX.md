@@ -1,6 +1,6 @@
 # Numbered research experiments
 
-Experiments 11–47 are individually recorded. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
+Experiments 11–48 are individually recorded. There are 38 individually indexed reports (11–48); experiments 1–10 are not archived in this index. Every completed experiment in this archive has its own standalone Markdown file. Earlier records (11–24) are retrospective summaries and do not pretend to restore any original lost derivations; the full sharp proof and exact certificate for Experiment 25 appear in the principal report and the code/data files.
 
 | Experiment | Topic | File |
 |---|---|---|
@@ -57,3 +57,5 @@ No confirmed claim of priority or breakthrough. Read [novelty audit](../docs/NOV
 | 46 | Exact all-dimensional safe-measure and tightness classification; 372 exact cases | [Experiment_46.md](Experiment_46.md) |
 
 | 47 | Exact global maximum loneliness from critical times; 154 independently checked cases | [Experiment_47.md](Experiment_47.md) |
+
+| 48 | Quantitative strictness-gap theorem for all integer dimensions; 372-case independent audit | [Experiment_48.md](Experiment_48.md) |
