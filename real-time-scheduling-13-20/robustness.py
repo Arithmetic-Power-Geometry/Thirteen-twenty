@@ -13,11 +13,11 @@ def shifted_safe_windows(a,b,phases=(0,0,0)):
         raise ValueError("a,b must be positive integers")
     if len(phases)!=3:
         raise ValueError("three phases required")
-    phases=tuple(map(F,phases))
+    phases=tuple(F(phi) % 1 for phi in phases)
     ends={F(0),F(1)}
     for v,phi in zip((a,b,a+b),phases):
         # Boundary crossings for v*t+phi = k +/- 1/16.
-        for k in range(-abs(phi.numerator)-2, v+abs(phi.numerator)+3):
+        for k in range(0, v+2):
             for offset in (-F(1,16),F(1,16)):
                 t=(F(k)+offset-phi)/v
                 if 0<t<1:
