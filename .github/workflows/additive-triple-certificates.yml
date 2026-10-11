@@ -50,6 +50,11 @@ jobs:
           print('PASS: 129568 exact records, complete coverage, unique equalities')
           PY
           sha256sum results/*.csv > results/SHA256SUMS.txt
+      - name: Upload regenerated certificates as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: additive-triple-exact-certificates
+          path: reproducibility/additive-triple-safe-time-2026/results/
       - name: Commit reproducible certificates
         shell: bash
         run: |
