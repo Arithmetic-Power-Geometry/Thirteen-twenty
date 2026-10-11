@@ -32,4 +32,8 @@ The two research contributions share additive-frequency geometry but address dif
 
 Research sources, numerical results, and reproducibility instructions are maintained in their respective linked directories. These results concern structured additive-frequency triples and are not presented as a resolution of the general Lonely Runner Conjecture.
 
+## License
+
+Licensed under the [Apache License, Version 2.0](LICENSE). See the `LICENSE` file for terms and conditions.
+
 Copyright © 2026 Mohammad Amir Khusru Akhtar
