@@ -1,0 +1,4 @@
+primitive_pairs=11698
+violations=0
+equality_cases=1
+equality_pair=1,14
