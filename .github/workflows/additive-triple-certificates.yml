@@ -1,0 +1,59 @@
+name: Reproduce additive-triple exact certificates
+on:
+  push:
+    paths:
+      - '.github/workflows/additive-triple-certificates.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate and verify
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd reproducibility/additive-triple-safe-time-2026
+          mkdir -p results
+          for range in '5 8' '9 12' '13 16' '17 20'; do
+            set -- $range
+            python certificate/independent_q_family.py --q-start "$1" --q-end "$2" --out "results/independent_q${1}_q${2}.csv"
+          done
+          g++ -std=c++17 -O2 certificate/original_checker.cpp -o /tmp/additive_midpoint
+          /tmp/additive_midpoint results/primary.csv
+          python certificate/independent_union_checker.py results/primary.csv results/independent.csv
+          python - <<'PY'
+          import csv,math,pathlib,collections
+          root=pathlib.Path('results')
+          seen=set(); counts=collections.Counter(); eq=collections.defaultdict(list)
+          for p in sorted(root.glob('independent_q*_q*.csv')):
+              with p.open() as f:
+                  for r in csv.DictReader(f):
+                      q,a,b,n,d=(int(r[k]) for k in ('q','a','b','safe_numerator','denominator'))
+                      B=(2*q*q*(q-1)+3*(q-3)-1)//(3*(q-3))
+                      assert 5<=q<=20 and 1<=a<=b<B and math.gcd(a,b)==1 and (q,a,b) not in seen
+                      seen.add((q,a,b)); counts[q]+=1
+                      assert d==q*a*b*(a+b) and 0<=n<=d
+                      diff=q*(q-1)*n-(q-3)*(q-4)*d
+                      assert diff>=0 and (diff==0)==bool(int(r['is_equality']))
+                      if diff==0:eq[q].append((a,b))
+          assert len(seen)==129568
+          for q in range(5,21):
+              B=(2*q*q*(q-1)+3*(q-3)-1)//(3*(q-3))
+              assert counts[q]==sum(math.gcd(a,b)==1 for b in range(1,B) for a in range(1,b+1))
+              assert eq[q]==[(1,q-2)]
+          print('PASS: 129568 exact records, complete coverage, unique equalities')
+          PY
+          sha256sum results/*.csv > results/SHA256SUMS.txt
+      - name: Commit reproducible certificates
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reproducibility/additive-triple-safe-time-2026/results
+          git diff --cached --quiet || (git commit -m 'Archive regenerated exact certificates q5-q20 and q16' && git push)
