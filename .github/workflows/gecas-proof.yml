@@ -1,0 +1,25 @@
+name: GECAS finite exact verification
+on:
+  push:
+    paths:
+      - 'GECAS/**'
+      - '.github/workflows/gecas-proof.yml'
+  workflow_dispatch:
+jobs:
+  exact-1320:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile verifier
+        run: g++ -std=c++17 -O2 -Wall -Wextra -pedantic GECAS/exact_1320.cpp -o GECAS/exact_1320
+      - name: Run and compare exact output
+        run: |
+          cd GECAS
+          ./exact_1320 > actual_output.txt
+          diff -u exact_1320_output.txt actual_output.txt
+          sha256sum -c SHA256SUMS
+      - name: Upload execution record
+        uses: actions/upload-artifact@v4
+        with:
+          name: gecas-exact-proof-output
+          path: GECAS/actual_output.txt
