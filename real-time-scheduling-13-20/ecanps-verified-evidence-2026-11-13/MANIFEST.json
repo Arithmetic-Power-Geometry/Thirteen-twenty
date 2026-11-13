@@ -1,0 +1,125 @@
+{
+  "collection": "ecanps-verified-evidence-2026-11-13",
+  "source_repository": "Arithmetic-Power-Geometry/ECANPS",
+  "source_revision": "b6afb1696be42e57e01fc79ca1c54bc87dc8266c",
+  "destination_repository": "Arithmetic-Power-Geometry/Thirteen-twenty",
+  "copied_date": "2026-11-13",
+  "code_files": [
+    {
+      "path": "code/independent_union.py",
+      "source_path": "verification/independent_union.py",
+      "source_git_blob_sha": "6b68609224a57ce6e534e0ed0053a04fb6b6277d",
+      "bytes": 1794
+    },
+    {
+      "path": "code/p03_05_implicit_query_regression.py",
+      "source_path": "verification/p03_05_implicit_query_regression.py",
+      "source_git_blob_sha": "8e3707717fb6c9a7c66467b20f5d37cdfef0e4b5",
+      "bytes": 2269
+    },
+    {
+      "path": "code/p03_06_indexed_implicit_query.py",
+      "source_path": "verification/p03_06_indexed_implicit_query.py",
+      "source_git_blob_sha": "db0243f72bd76a18e706d77fa22163d932ef8c95",
+      "bytes": 3998
+    },
+    {
+      "path": "code/p03_07_calendar_benchmark.py",
+      "source_path": "verification/p03_07_calendar_benchmark.py",
+      "source_git_blob_sha": "82287220efab73b33844db76a2d061112be0a483",
+      "bytes": 2149
+    },
+    {
+      "path": "code/p03_10_generic_periodic_baseline.py",
+      "source_path": "verification/p03_10_generic_periodic_baseline.py",
+      "source_git_blob_sha": "07698c52cdcd930d4f7c327945c3c7e8c7681d31",
+      "bytes": 3762
+    },
+    {
+      "path": "code/p03_11_component_packing_bound.py",
+      "source_path": "verification/p03_11_component_packing_bound.py",
+      "source_git_blob_sha": "1ec53058cb14ee5130e57c4b8280b4e90faceffd",
+      "bytes": 3222
+    },
+    {
+      "path": "code/p03_12_exact_weighted_scheduling.py",
+      "source_path": "verification/p03_12_exact_weighted_scheduling.py",
+      "source_git_blob_sha": "0883837f6723a5aa0eaf8c770a2b88c705c65acb",
+      "bytes": 3130
+    },
+    {
+      "path": "code/p03_13_window_aware_bound.py",
+      "source_path": "verification/p03_13_window_aware_bound.py",
+      "source_git_blob_sha": "2ff040167245fcbd7efb317cdfbcebe919957ebd",
+      "bytes": 3172
+    },
+    {
+      "path": "code/p03_14_cpsat_independent.py",
+      "source_path": "verification/p03_14_cpsat_independent.py",
+      "source_git_blob_sha": "5db50a1a4d67f577627d9cc8151f5b9f2a3cc3e6",
+      "bytes": 3049
+    },
+    {
+      "path": "code/p03_15_matched_solver_benchmark.py",
+      "source_path": "verification/p03_15_matched_solver_benchmark.py",
+      "source_git_blob_sha": "932d5c8de5553eaf1e1275988f5643be93c6c366",
+      "bytes": 1834
+    },
+    {
+      "path": "code/p03_16_stratified_solver_benchmark.py",
+      "source_path": "verification/p03_16_stratified_solver_benchmark.py",
+      "source_git_blob_sha": "55ae6b711b37afedd0e98e95dab8a406ec28ffee",
+      "bytes": 1627
+    },
+    {
+      "path": "code/p03_17_equal_wall_budget.py",
+      "source_path": "verification/p03_17_equal_wall_budget.py",
+      "source_git_blob_sha": "0d655d656f3bee9013bac3a1cacd4b0642a41751",
+      "bytes": 3491
+    },
+    {
+      "path": "code/p03_18_warm_matched_benchmark.py",
+      "source_path": "verification/p03_18_warm_matched_benchmark.py",
+      "source_git_blob_sha": "2b0455a98a8ebbb46288367bea6abf9d85b79362",
+      "bytes": 2263
+    },
+    {
+      "path": "code/p03_21_independent_measure_oracle.py",
+      "source_path": "verification/p03_21_independent_measure_oracle.py",
+      "source_git_blob_sha": "bd11bc5c8f40ddf7779e5fa962c431e292db1310",
+      "bytes": 1666
+    },
+    {
+      "path": "code/p03_22_analytic_tail_arithmetic.py",
+      "source_path": "verification/p03_22_analytic_tail_arithmetic.py",
+      "source_git_blob_sha": "5961a4b3efb9496e1b395367b0a0ac2e2b9470cc",
+      "bytes": 1806
+    },
+    {
+      "path": "code/p03_23_finite_certificate_integrity.py",
+      "source_path": "verification/p03_23_finite_certificate_integrity.py",
+      "source_git_blob_sha": "86509f389eeba4fe2c0294fc729fa9c83e11b564",
+      "bytes": 1497
+    },
+    {
+      "path": "code/p03_24_cpp_python_per_pair.py",
+      "source_path": "verification/p03_24_cpp_python_per_pair.py",
+      "source_git_blob_sha": "1a8232d50992464be4aefacba266c188f402fb2c",
+      "bytes": 1933
+    },
+    {
+      "path": "code/p03_31_parametric_rational_audit.py",
+      "source_path": "verification/p03_31_parametric_rational_audit.py",
+      "source_git_blob_sha": "331331583c61c4d1f540a7aab102d21f9f7cd4a3",
+      "bytes": 2355
+    },
+    {
+      "path": "code/reference/original_checker_snapshot.cpp",
+      "source_path": "verification/reference/original_checker_snapshot.cpp",
+      "source_git_blob_sha": "0dfb2edb4421003ad96f0444ac3b36d770f45897",
+      "bytes": 964
+    }
+  ],
+  "results_file": "RESULTS.md",
+  "copy_validation": "19/19 source and destination UTF-8 contents match exactly"
+}
